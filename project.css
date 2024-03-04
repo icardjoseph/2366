@@ -1,5 +1,3 @@
-/*Google fonts*/
-@Emport url http://fonts.googleapis.com/css2 family=poppins;
 .google{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -20,9 +18,6 @@ body{
     --second-color:#eadf09;
     --text-color:#070707;
     --bg-color:#236c5a;
-}
-/*Box Shadow*/{
- --box-shadow:2px 3px 10px 4px rgd(14 55 54 /15%);
 }
 /*custom scroll bar*/
 html::-webkit-scrollbar{
@@ -228,6 +223,7 @@ header{
     grid-template-columns:auto auto auto auto;
     gap:1rem;
     margin-top: 2rem;
+    border-radius: 90px;
 }
 .product-container.box{
     position: relative;
