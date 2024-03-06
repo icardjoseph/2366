@@ -24,7 +24,7 @@ html::-webkit-scrollbar{
     width:0.5rem;
 }
 html::-webkit-scrollbar-thumb{
-    background:transparent;
+    background:#d11313;
 }
 html::-webkit-srcoll-track{
     background: var(--text-color);
@@ -36,6 +36,7 @@ html::-webkit-srcoll-track{
     color:var(--bg-color);
     font-weight: 500;
     display: inline-block;
+    text-decoration: none;
     text-transform: uppercase;
     clip-path:polygon(100% 0, 93% 50%, 86% 99%, 0% 100%, 7% 47%, 13% 0%,);
 }
@@ -62,6 +63,7 @@ header{
     z-index: 1000;
     display: flex;
     align-items:center;
+    text-decoration: none;
     background-color: transparent;
     backdrop-filter: blur(5px);
     justify-content: space-between;
@@ -83,10 +85,12 @@ header{
 .navbar{
     display: flex;
     column-gap: 2.4rem;  
+    list-style: none;
 }
 .navbar a{
     font-size: 1rem;
     font-weight: 500;
+    text-decoration: none;
     color:var(--text-color);
 }
 .navbar a:hover{
@@ -117,46 +121,7 @@ header{
     right: 1rem;
     transition: 0.2s;
 }
-.cart{
-    position:absolute;
-    top:110px;
-    right: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 0.5rem;
-    background: var(--bg-color);
-    padding:20px;
-    border-radius: 0.5rem;
-    box-shadow: var(--box-shadow);
-}
-.cart img{
-    width:100px;
-}
-.cart.box{
-    display: flex;
-    align-items: center;
-    column-gap: 2rem;
-}
-.cart.box.text h3{
-    font-size: 1rem;
-}
-.cart.box.bx{
-    font-size:24px;
-}
-.cart.box.bx:hover{
-    color: var(--main-color);
 
-
-}
-.cart h2{
-    font-size:1.1rem;
-    font-weight: 600;
-}
-.cart-active{
-    right:1rem;
-    transition: 0.2s;
-}
 
 .home{
     width: 100%;
@@ -192,7 +157,6 @@ header{
 .new-arrivalbox{
     position:relative;
     overflow: hidden;
-    background:blue;
 }
 .new-arrival .box img{
     background: var(--second-color);
@@ -373,12 +337,17 @@ footer{
     right:100%;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
     background: var(--bg-color);
     row-gap: 1.4rem;
     padding: 20px;
     box-shadow: 4px 4px 0 4px rgb(14 55 54 /15%);
     transition: 0.2s linear;
     text-align: left;
+}
+.header.logo h1{
+    width: 200px;
+    height: 200px;
 }
 .navbar.active{
     right: 0;
@@ -410,12 +379,11 @@ footer{
    height: 300px;
    border-radius: 50px;
 }
-.header-icons{
-    width: 50px;
-    height: 50px;
-    justify-content:center;
-    columns: 100px;
+
+h1{
+    font-size: 70px;
 }
+
 
 h1{
     font-size: 70px;
