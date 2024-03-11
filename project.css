@@ -9,15 +9,14 @@
     scroll-padding-top: 2rem;
 }
 body{
-    background-color: #fda702;
+    background-color:lavender;
     scroll-behavior: smooth;
 }
 /*some variables*/
 :root{
-    --main-color:#35c411;
-    --second-color:#eadf09;
+    --main-color:#ebad03;
+    --second-color:#31fdfd;
     --text-color:#070707;
-    --bg-color:#236c5a;
 }
 /*custom scroll bar*/
 html::-webkit-scrollbar{
@@ -64,8 +63,8 @@ header{
     display: flex;
     align-items:center;
     text-decoration: none;
-    background-color: transparent;
-    backdrop-filter: blur(5px);
+    background-color: lightseagreen;
+    backdrop-filter: blur(8px);
     justify-content: space-between;
     padding: 20px, 100px;
     transition: 0.5s linear;
@@ -124,13 +123,12 @@ header{
 
 
 .home{
-    width: 100%;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,min-max(17rem,1fr));
-    align-items: center;
-    gap: 1.5rem;
-    background:var(--second-color)
+    /* width: 100%; */
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* background:var(--second-color) */
 }
 .home-textspan{
     font-weight: 600;
@@ -381,10 +379,5 @@ footer{
 }
 
 h1{
-    font-size: 70px;
-}
-
-
-h1{
-    font-size: 70px;
+    font-size: 30px;
 }
